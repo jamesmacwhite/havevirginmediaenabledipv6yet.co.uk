@@ -1,3 +1,20 @@
+exclude:
+  - node_modules
+  - script
+
+sass:
+  style: :compressed
+
 theme: jekyll-theme-primer
+
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "main"
+    path: "/"
+  repository_url: "https://github.com/jamesmacwhite/vm-whynoipv6"
+  
 title: Have Virgin Media deployed IPv6 yet?
-description: [A short description of your site's purpose]
+description: A little project about IPv6 on Virgin Media Broadband (or the lack of it!)
