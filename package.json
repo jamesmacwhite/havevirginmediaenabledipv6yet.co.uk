@@ -1,15 +1,16 @@
 {
-  "name": "jekyll-theme-primer",
+  "name": "vm-whynoipv6",
   "version": "0.1.0",
-  "description": "A Jekyll theme based on GitHub's Primer styles",
+  "description": "A little Jekyll project for informing users about the lack of IPv6 on Virgin Media Broadband",
   "main": "index.html",
   "scripts": {
     "test": "script/cibuild"
   },
-  "author": "Ben Balter",
+  "author": "James White",
   "license": "MIT",
   "dependencies": {
     "primer-base": "^1.9.2",
+    "primer-buttons": "^3.0.0",
     "primer-layout": "^1.6.2",
     "primer-markdown": "^3.7.13",
     "primer-support": "^4.7.2",

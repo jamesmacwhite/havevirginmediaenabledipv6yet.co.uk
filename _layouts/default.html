@@ -11,21 +11,18 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
 
-      <div class="text-center">
-        <img src="{{ "assets/images/vm-b-logo-red-cmyk-reg.png" | relative_url }}" alt="Virgin Media logo" width="250">
+      {% include_relative _includes/header.html %}
 
-        <p class="h1 text-center type-size-1">Have Virgin Media enabled IPv6 yet?</p>
-        <p class="h2">Answer: <span style="color: red;">NO 😢</span></p>
+      <p class="lead">{{ site.lead_text }}</p>
 
-        <p>We've been asking since March 2010...</p>
-        <hr>
+      <div id="markdown-toc">
+        {% include toc.html html=content %}
       </div>
 
       {{ content }}
 
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-gray">
-        Obviously not affiliated with Virgin Media in any way.
-      </div>
+      {% include_relative _includes/footer.html %}
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
