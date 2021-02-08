@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<p class="lead">Virgin Media like many UK Internet Service Providers (ISPs) have not yet deployed IPv6. While this isn't major news because loads of ISPs suffer from IPv6 deployment lag (since December 1995), Virgin Media UK has an interesting IPv6 story and lots of plot twists which is why I felt I needed to create this page, to inform others who may be looking at IPv6 (or the lack of) and happen to be a Virgin Media customer.</p>
+<p class="lead">Virgin Media like many UK Internet Service Providers (ISPs) have not yet deployed IPv6. While this isn't major news because loads of ISPs suffer from IPv6 deployment lag (since December 1995), Virgin Media UK has an interesting IPv6 story which is why I felt I needed to create this page, to inform others who may be looking at IPv6 (or the lack of) and happen to be a Virgin Media customer.</p>
 
-## Summary
+## About this page
 
-[Virgin Media UK](https://www.virginmedia.com) does not currently have IPv6 deployed however [Virgin Media Ireland](https://www.virginmedia.ie) does, just to make it confusing. DS-Lite is used by Liberty Global and Virgin Media inherits this IPv6 transitional technology because Liberty Global (being the parent company) likes to deploy it A LOT it seems. Personally DS-Lite can go die in a fire, but that's just me. The focus of this is IPv6 generally which Virgin Media have a great track record of not having. So we'll focus on that. After all this website domain is specifically aimed at this purpose.
+[Virgin Media UK](https://www.virginmedia.com) does not currently have IPv6 deployed however [Virgin Media Ireland](https://www.virginmedia.ie) does, just to make it confusing. DS-Lite is used by Liberty Global and Virgin Media inherits this IPv6 transitional technology because Liberty Global (being the parent company) likes to deploy it A LOT it seems. Personally DS-Lite can go die in a fire, but that's just me. The focus of this is IPv6 generally which Virgin Media have a great track record of not having. So we'll focus on that. This website domain is specifically named for this purpose after all!
 
 All this information relates to Virgin Media UK Broadband services.
 
 ## The unofficial IPv6 event timeline
 
-A summarised list of key IPv6 related events at Virgin Media, completely made up by me as I don't work for them and after creating this little site, likely have zero chance of doing so either.
+A summarised list of key IPv6 related events at Virgin Media UK, completely made up by me as I don't work for them and after creating this little site, likely have zero chance of doing so either.
 
 * **March 2010**: [The IPv6 mega thread was born](https://community.virginmedia.com/t5/QuickStart-set-up-and/IPv6-support-on-Virgin-media/td-p/35748) on the Virgin Media Community Forums. The original thread asked a simple question, when will Virgin Media deploy IPv6? The answer: "When we are ready". Over 10 years later, Virgin Media still aren't ready...
 * **October 2014**: First appearance and presentation at the [UK IPv6 council](https://www.ipv6.org.uk/).
@@ -52,7 +52,7 @@ No one knows for sure because Virgin Media deny any discussion around throttling
 
 It is worth pointing out that 6in4 is also a transitional technology and shouldn't be used forever. The real fix here is to make Virgin Media do the needful and rollout IPv6. Thus resolving the lack of IPv6 problem and negating the need to use any form of transitional IPv6 deployment. Unless of course they decide to use DS-Lite, then you should just switch providers. Seriously.
 
-## Alternative IPv6 options
+## Alternative IPv6 options that aren't 6in4
 
 Now you've been informed about 6in4/tunnel issues. What other options are available since Virgin Media currently refuses to deploy IPv6 or providing useful information on their plans?
 
@@ -60,19 +60,21 @@ Now you've been informed about 6in4/tunnel issues. What other options are availa
 
 2. **Rent a VPS with native IPv6** - If you can get a VPS from a provider like Linode, Digital Ocean etc, you can setup your own VPN tunnel with something like Wireguard and provide a IPv6 prefix over the tunnel. You could also do this with 6in4 but at this point, if you've gone that far, you might as well have native IPv6.
 
-3. **Configure 6in4 on another independent WAN link** - Multihoming is becoming more common and not just in the enterprise. We know that the 6in4 issues are specifically related to Virgin Media, so there is nothing stopping you from having a tunnel point to an IP address on another internet connection on the same router, if you happen to have multiple internet connections.
+3. **Configure 6in4 on another independent WAN link** - Multihoming is becoming more common and it's not just in the enterprise world anymore. We know that the 6in4 issues are specifically related to Virgin Media, so there is nothing stopping you from having a tunnel point to an IP address on another internet connection on the same router, if you happen to have multiple internet connections.
 
-There is however one issue with all of these solutions, they'll cost you money in addition to your existing Virgin Media contract. You will need to weight up how much is it worth to have IPv6 vs not at all or putting up with poor 6in4 performance.
+There is however one major issue with all of these solutions, they'll cost you money in addition to your existing Virgin Media contract. You will need to weight up how much is it worth to have performant IPv6 vs not at all or putting up with poor 6in4 performance and living with it. Great options right?!
 
-## The real solution is IPv6. No, really
+## The real solution is IPv6 (No, really)
 
-The simple solution to fix all of this complicated mess is for Virgin Media to deploy IPv6, which seems obvious when you say it. If this happened, the 6in4 problem goes away because no one has to use 6in4 anymore. Unfortunately, this has been the catch 22 problem from the beginning. There are several issues which essentially create an ironic recursive loop scenario.
+The simple solution to fix all of this complicated mess is for Virgin Media to deploy IPv6, which seems obvious when you say it. If this happened, the 6in4 problem goes away because no one would need 6in4 anymore. Unfortunately, this has been the catch 22 problem from the beginning. There are several issues which essentially create an ironic recursive loop scenario.
 
 * Virgin Media won't deploy IPv6 in a hurry (Native IPv6 not possible)
 * A free and common transitional IPv6 technology performs poorly on Virgin Media (That's the free IPv6 solution out)
-* Other IPv6 solutions require additional cost and time investment (The biggest slap in the face)
+* Other IPv6 solutions require additional cost, time and additional network complexity (The biggest slap in the face is the cost)
 * Go back to the first problem and repeat
 
-## Tell Virgin Media what you think about IPv6
+## Tell Virgin Media what you think about the lack of IPv6
 
-Historically Virgin Media have been resistant to deploy IPv6. The general view appears to be that they don't see any business or customer benefits to do it. While that might be true to a degree, some of their major competitors like BT and Sky, deployed IPv6 years ago. Equally, they'll have to deploy IPv6 at some point, because it is the future, like it or not. Therefore, the only option we have is customers is to make Virgin Media listen. If they get enough noise from customers about IPv6, they might just start to pay more attention, instead of disregarding it as they have done for over 10 years. While a lot of Virgin Media customers won't know or even care about IPv6, the people that do have a responsibility to at least make Virgin Media listen and convince them that the time is now!
+Historically Virgin Media have been resistant to deploy IPv6. The general view appears to be that they don't see any business or customer benefits to do it. While that might be true to a degree and has been one of the major issues with getting providers to roll out IPv6, some of their major competitors like BT and Sky, deployed IPv6 years ago with little fuss. Equally, Virgin Media will have to deploy IPv6 at some point, because it is the future, like it or not. Therefore, the only option we have as customers is to make Virgin Media listen. If they get enough noise from customers about IPv6, they might just start to pay more attention, instead of disregarding it as they have done for over 10 years. While a lot of Virgin Media customers won't know or even care about IPv6, the people that do have a responsibility to at least make Virgin Media listen and convince them that the time is now!
+
+**Time to spread the word**
