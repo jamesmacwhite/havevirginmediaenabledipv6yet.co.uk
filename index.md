@@ -1,6 +1,6 @@
 ---
 layout: default
-image: '/assets/images/World_IPv6_launch_logo.svg'
+image: /assets/images/World_IPv6_launch_logo.png
 ---
 
 ## About this website
