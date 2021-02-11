@@ -5,3 +5,11 @@ a {
     text-decoration: none;
   }
 }
+
+.btn {
+  display: block;
+
+  @include breakpoint(md) {
+    display: inline-block;
+  }
+}
