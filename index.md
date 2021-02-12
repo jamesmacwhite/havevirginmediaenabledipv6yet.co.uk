@@ -52,7 +52,7 @@ If you have a reasonable understanding of networking or have a technical backgro
 
 It has long been known and more recently documented that running a 6in4 tunnel from a provider such as Hurricane Electric results in horribly slow speeds that exhibit a "capped" behaviour on Virgin Media connections. Virgin Media will state there is no speed caps on any protocol on the unlimited broadband services, but some customers call shenanigans. I myself decided I'd investigate the issue and decided to document my findings below.
 
-<a href="https://jamesmacwhite.medium.com/is-virgin-media-traffic-shaping-protocol-41-6in4-ipv6-c1b8b6e645f7" target="_blank" class="btn">Read my technical analysis</a>
+<a href="https://jamesmacwhite.medium.com/is-virgin-media-traffic-shaping-protocol-41-6in4-ipv6-c1b8b6e645f7" target="_blank" class="btn text-center">Read my technical analysis</a>
 
 **If you don't want to read the full article above, these are the main findings**
 
