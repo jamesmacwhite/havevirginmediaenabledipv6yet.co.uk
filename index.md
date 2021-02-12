@@ -26,7 +26,7 @@ A summarised list of key IPv6 related events with Virgin Media.
 
 As you can see, it has been a bit of a wild ride!
 
-## IPv6
+## The IPv6 story
 
 Searching for "Virgin Media IPv6" will probably bring up many of the resources linked above and articles I've likely written or commented on, given I've been quite vocal about the subject for a while now.
 
