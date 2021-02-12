@@ -3,7 +3,7 @@ layout: default
 image: /assets/images/card.jpg
 ---
 
-## About this website
+## It's time for Virgin Media to deploy IPv6!
 
 This website is meant to be an informative resource (with an admittedly somewhat sarcastic tone) and raise awareness of the lack of IPv6 on Virgin Media UK Broadband services along with additional information around specific issues with IPv6 tunnels and other areas (it is quite a fun ride). The domain name is a bit of a cheeky dig to see if the marketing team at Virgin Media are watching. Let's find out!
 
