@@ -39,16 +39,16 @@ While Virgin Media hasn't deployed IPv6 officially in the UK, it has in the past
 Why is DS-Lite seen as "bad", it is after all standardised and used by various providers right? Here are some key issues with DS-Lite from a consumer basis which might catch a lot of people out and possibly a reason why it was rumoured to be abandoned.
 
 * DS-Lite is believed to be only possible in router mode based on the Virgin Media Hub firmware code, to use it means you have to give up modem mode. This won't sit well with many customers given a lot of customers choose to use this functionality and have done for years
-* DS-Lite removes having your own IPv4 address being routed to you and instead this will be translated through CGNAT. (CGNAT IS EVIL, ask Interpol)
-* DS Lite means you will no longer be able to run external services over IPv4 anymore
-* DS-Lite is horrible for gamers as most games/lobby systems will not use IPv6 (irony)
-* DS-Lite removes IPv4 port forwarding, so if you are currently doing that right now, that's not possible anymore
+* DS-Lite removes having your own IPv4 address being routed to you and instead this will be translated through CGNAT. (CGNAT IS EVIL, [ask Europol](https://www.europol.europa.eu/newsroom/news/are-you-sharing-same-ip-address-criminal-law-enforcement-call-for-end-of-carrier-grade-nat-cgn-to-increase-accountability-online))
+* DS Lite means you will no longer be able to run any external services over IPv4 anymore
+* DS-Lite is horrible for gamers as most games/lobby systems will not use IPv6 (expect a "strict" NAT type)
+* DS-Lite removes IPv4 port forwarding, so if you are currently using that right now, that's not possible with DS-Lite
 
-DS-Lite provides you a native IPv6 prefix (GOOD!) with IPv4 translated through CGNAT (BAD!). This is why the preferred approach is dual stack, yes it is more complex to maintain two protocols, but since Virgin Media has boasted in the past that its IPv4 space was plentiful, they've most likely got the address space to do it. Two of their biggest competitors in the fixed line broadband space went dual stack (BT and Sky).
+DS-Lite provides you a native IPv6 prefix (GOOD!) with IPv4 translated through CGNAT (BAD!). This is why the preferred approach is dual stack, yes it is more complex to maintain two protocols, but since Virgin Media has boasted in the past that its IPv4 space was plentiful, they've most likely got the address space to do it. Two of their biggest competitors in the fixed line broadband space (BT and Sky) both use a dual stack approach.
 
 ### IPv6 tunnels
 
-If you have a reasonable understanding of networking or have a technical background, you'll likely know that just because some ISPs don't have IPv6, doesn't mean you can't get IPv6 another way. Many ISPs not deploying IPv6 means users who want it turn to other solutions, one common method is a 6in4 tunnel. If it wasn't insulting or frustrating enough to not have native IPv6 from your ISP, Virgin Media has a troubled history with the 6in4 protocol on it's network, leading to a bit of a checkmate scenario.
+If you have a reasonable understanding of networking or have a technical background, you'll likely know that just because some ISPs don't have IPv6, doesn't mean you can't get IPv6 another way. Many ISPs not deploying IPv6 means users who want it turn to other solutions, one common method is a 6in4 tunnel. If it wasn't insulting or frustrating enough to not have native IPv6 from your ISP, Virgin Media has a troubled history with the 6in4 protocol on its network, leading to a bit of a checkmate scenario.
 
 It has long been known and more recently documented that running a 6in4 tunnel from a provider such as Hurricane Electric results in horribly slow speeds that exhibit a "capped" behaviour on Virgin Media connections. Virgin Media will state there is no speed caps on any protocol on the unlimited broadband services, but some customers call shenanigans. I myself decided I'd investigate the issue and decided to document my findings below.
 
@@ -56,16 +56,16 @@ It has long been known and more recently documented that running a 6in4 tunnel f
 
 **If you don't want to read the full article above, these are the main findings**
 
-1. When a 6in4 tunnel is pointed at a Virgin Media IP, the speed is very poor. (This also includes Virgin Media Business)
+1. When a 6in4 tunnel is pointed at any Virgin Media IP, the speed is very poor. (This also includes Virgin Media Business lines as well)
 2. If you encapsulate 6in4 over something like UDP, suddenly the problem goes away
 3. If you have a 6in4 tunnel pointed to a non Virgin Media IP, you will not experience any problems
 
 **Two key findings stand out from this**
 
 1. Something on the Virgin Media side is the problem
-2. Encapsulating 6in4 within another protocol seems to avoid the performance issues
+2. Encapsulating 6in4 within another protocol seems to avoid or circumvent the performance issues
 
-L2TP, UDP, OpenVPN, Wireguard you name it, if you send 6in4 over any of them, you'll not see the same performance problems. So about that not throttling traffic thing...
+Any protocol such as L2TP, UDP, OpenVPN, Wireguard you name it, if you send 6in4 inside them, you'll not see the same performance problems. So about that not throttling traffic thing...
 
 **The main theories of why this is the case are <ins>widely debated</ins>**:
 
@@ -75,26 +75,26 @@ L2TP, UDP, OpenVPN, Wireguard you name it, if you send 6in4 over any of them, yo
 * General CPU bottlenecks (6in4 does have some CPU requirements)
 * Bad configuration e.g. MTU.
 
-The alternative theory which Virgin Media itself seems to think might be the case is it's their CPE causing the performance problem for customers. This however is also debated as the issue has been proven to occur on the first version of the SuperHub and up. Equally, remember the encapsulation theory.
+The alternative theory which Virgin Media itself seems to think might be the case is it's their CPE causing the performance problem for customers. This however is also debated as the issue has been proven to occur on the first version of the SuperHub and up.
 
-The many theories as to what the specific issue is with 6in4 are widely debated and disputed. Ultimately, it doesn't really matter as it is worth pointing out that 6in4 is also a transitional technology and shouldn't be used forever either, so holding out on 6in4 is basically just like not deploying IPv6 anyway. The real "fix" here is to demonstrate to Virgin Media that IPv6 is needed now. Thus resolving the lack of IPv6 problem and negating the need to use any form of transitional IPv6 deployment.
+The many theories as to what the specific issue is with 6in4 are widely debated and disputed. Ultimately, it doesn't really matter as it is worth highlighting that 6in4 is also a transitional technology and shouldn't be used forever either, so holding out on 6in4 is basically just like not deploying IPv6 anyway. The real "fix" here is to demonstrate to Virgin Media that IPv6 is needed now. Thus resolving the lack of native IPv6 problem and negating the need to use any form of transitional IPv6 technology in the first place.
 
 ### Alternative IPv6 options
 
-Now you've been informed about the lack of native IPv6, and the specific 6in4/tunnel issues. What other options are available without native IPv6? You could of course just not bother and wait for Virgin Media to eventually deploy it after all. Chances are however you are interested in IPv6 and likely an enthusiast like me. Here are some alternatives you could look into.
+Now you've been informed about the lack of native IPv6, and the specific 6in4/tunnel issues you are likely to encounter. What are the potential IPv6 options available? The easiest option would be to simply wait for Virgin Media to just deploy IPv6 themselves, however given it has been over 10 years since the question was first asked and we're still waiting, that's not really going to be a quick solution. Below are some alternatives you might want to consider if you cannot wait for Virgin Media itself to deploy IPv6.
 
-1. **[Andrews and Arnold L2TP service](https://www.aa.net.uk/broadband/l2tp-service/)** - Unlike Virgin Media, Andrews and Arnold actually thought about IPv6 a while ago and have had it working on their network for a long time (IT CAN BE DONE!). While not a sales pitch, their L2TP service allows you to have one, or a block of static IPv4 address and at minimum a /48 native IPv6 prefix. The downside? There is a speed cap and data isn't unlimited, but if you can configure an L2TP tunnel on a client somewhere, you'll be in business and essentially have your IPv6 transit from someone else entirely. This isn't unheard of after all and Andrews and Arnold themselves note some of their customers do this right now.
+1. **[Andrews and Arnold L2TP service](https://www.aa.net.uk/broadband/l2tp-service/)** - Unlike Virgin Media, Andrews and Arnold actually thought about IPv6 a while ago and have had it working on their network for a long time (IT CAN BE DONE!). While not a sales pitch, their L2TP service allows you to have one, or a block of static IPv4 address and at minimum a /48 native IPv6 prefix. The downside? There is a speed cap (either 100 or 200 mbps) and data isn't unlimited, but if you can configure an L2TP tunnel on a client somewhere, you'll be in business and essentially have your IPv6 transit from another ISP entirely. This isn't unheard of after all and Andrews and Arnold themselves note some of their customers do this right now.
 
-2. **Rent a VPS with native IPv6** - If you can get a VPS from a provider like Linode, Digital Ocean etc, you can setup your own VPN tunnel with something like Wireguard and provide a IPv6 prefix over the tunnel. You could also do this with 6in4 but at this point, if you've gone that far, you might as well have native IPv6 to start with. Any VPN solution should likely be based on Wireguard these days compared to OpenVPN, given Wireguard is more optimised for embedded devices and offers better speed due to being less taxing on CPU.
+2. **Rent a Virtual Private Server (VPS) with native IPv6** - If you can get a VPS from a provider like Linode, Digital Ocean etc, you can setup your own VPN tunnel with something like Wireguard and provide a IPv6 prefix over the tunnel. You could also do this with 6in4 but at this point, if you've gone that far, you might as well have native IPv6 to start with. Any VPN solution should likely be based on Wireguard compared to OpenVPN, given Wireguard is more optimised for embedded devices and offers better speed due to being less taxing on CPU with more modern cryptography.
 
-3. **Configure 6in4 on another independent WAN link** - Multihoming is becoming more common, and it's not just something in the enterprise world anymore. We know that the 6in4 issues are specifically related to Virgin Media regardless of what the actual cause is, so there is nothing stopping you from having a tunnel point to an IP address on another internet connection on the same router, if you happen to have multiple internet connections of course.
+3. **Configure a 6in4 tunnel on another independent WAN link** - Multihoming is becoming more common, and it's not just something in the enterprise world anymore. We know that the 6in4 issues are specifically related to Virgin Media regardless of what the actual cause is, so there is nothing stopping you from having a tunnel point to an IP address on another internet connection on the same router, if you happen to have multiple internet connections of course.
 
-There is however one major issue with all of these solutions, they'll cost you money in addition to your existing Virgin Media contract. You will need to weight up how much is it worth to have performant IPv6 vs not at all or putting up with poor 6in4 performance and living with it given that is the free option without cost.
+There is however one major issue with all of these alternative solutions, they'll cost you money in addition to your existing Virgin Media contract. You will need to weight up how much is it worth to have performant IPv6 vs not at all or putting up with poor 6in4 performance and living with it.
 
 ## Tell Virgin Media what you think
 
-By now you know that Virgin Media have been very resistant to deploy IPv6. The general view and consensus they are signalling suggests that they just don't see any business or customer benefits to do it. While that might be true to a degree some of their major competitors like BT and Sky, deployed IPv6 years ago with little fuss. Equally, Virgin Media will have to deploy IPv6 at some point, because it is the future, like it or not. Therefore, the only option we have as customers is to make Virgin Media listen. Perhaps if they get enough noise from customers about IPv6, they might just start to pay more attention, instead of disregarding it as they have done for over 10 years. While a lot of Virgin Media customers won't know or even care about IPv6, the people that do have a responsibility to at least make Virgin Media listen and convince them that the time is now!
+By now you know that Virgin Media have been very resistant to deploy IPv6. The general view and consensus they are signalling suggests that they just don't see any business or customer benefits to do it. While there might not be a strong customer use case currently, some of their major competitors like BT and Sky, deployed IPv6 years ago with little fuss regardless. Equally, Virgin Media will have to deploy IPv6 at some point, because it is the future of the internet, like it or not. IPv4 is technically classified as legacy and holding on to it is just delaying the inevitable. Therefore, the only option we have as perhaps more technically minded customers is to make Virgin Media listen. Perhaps if they get enough noise from customers about IPv6, they might just start to pay more attention, instead of disregarding it as they have done for over 10 years. While a lot of Virgin Media customers won't know or even care about IPv6, the people that do have a responsibility to at least make Virgin Media listen and convince them that the time is now!
 
 The simple solution to fix all of this complicated mess is for Virgin Media to deploy IPv6, which seems obvious when it is said like that, but it really is!
 
-**Time to spread the word! Sign the petition and tweet them. Let your voice be heard. Deploy IPv6!**
+**Time to spread the word! Consider signing the petition and tweet them to raise awareness. Let your voice be heard. Deploy IPv6!**
