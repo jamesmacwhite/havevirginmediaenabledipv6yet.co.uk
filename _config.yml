@@ -28,16 +28,16 @@ description: Raising awareness about the lack of IPv6 on Virgin Media Broadband
 lead_text:  Virgin Media like many UK Internet Service Providers (ISPs) have not yet deployed IPv6. While this isn't breaking news because loads of ISPs suffer from IPv6 deployment lag (since December 1995), Virgin Media UK has an interesting IPv6 story which is why I felt I needed to create this page, to inform others who may be looking at IPv6 (or the lack of) and happen to be a Virgin Media customer.
 google_analytics: UA-39273437-3
 change_org_petition_url: https://www.change.org/virginmediaipv6
-twitter_sharer_url: http://twitter.com/share?text=@virginmedia You should really think about enabling IPv6&url=https://havevirginmediaenabledipv6yet.co.uk
+twitter_sharer_url: https://twitter.com/share?text=@virginmedia You should really think about enabling IPv6&url=https://havevirginmediaenabledipv6yet.co.uk
 
 faqs:
   -
-    title: Does Virgin Media Broadband support IPv6?
-    content: For UK broadband customers no, for Virgin Media Ireland customers, yes. This is through DS-Lite.
+    title: Does Virgin Media Broadband have IPv6?
+    content: For UK broadband customers no, for Virgin Media Ireland customers, yes. This is through DS-Lite. More recently it has been discovered that there is in fact [some IPv6 configuration present for Virgin Media UK connections](https://jamesmacwhite.medium.com/have-virgin-media-enabled-ipv6-sort-of-9443e5e855d?source=friends_link&sk=863cd14dc40d718be6d4f8bbf46e2220), but you need to know where to look.
 
   -
     title: Why does Virgin Media Ireland have IPv6 but not Virgin Media UK?
-    content: While both branded as Virgin Media the Ireland and UK operations are actually quite different networks. Ireland was actually known as UPC Ireland before being acquired by Liberty Global. is essentially the combination of the NTL and Telewest networks being merged under the Virgin Media branding, which ultimately were acquired by Liberty Global. Because of this there may be different factors, for example IPv4 exhaustion being more of a critical issue for the Ireland side compared to the UK.
+    content: While both branded as Virgin Media the Ireland and UK operations are actually quite different networks. Ireland was formerly known as UPC Ireland before being acquired by Liberty Global. Because of this there may be different factors, for example IPv4 exhaustion being more of a critical issue for the Ireland side compared to the UK.
 
   -
     title: Have Virgin Media UK previously tested IPv6?
@@ -49,7 +49,7 @@ faqs:
 
   -
     title: Why are some customers against DS-Lite?
-    content: The issues with DS-Lite for some more technicial customers based on what we know from Virgin Media Ireland. You are restricted to having the Hub in router mode to even have IPv6 to start with, further more you lose port forwarding and modem mode, as the firmware configuration removes these options once DS-Lite is enabled. A lot of customers use modem mode currently and therefore to have DS-Lite IPv6, this basically makes you give it up. In addition, DS-Lite essentially creates a triple NAT for IPv4, given DS-Lite translates IPv4 through CGNAT and many people hate CGNAT.
+    content: The issues with DS-Lite for some more technicial customers based on what we know from Virgin Media Ireland. You are restricted to having the Hub in router mode to even have IPv6 to start with, further more you lose port forwarding and modem mode, as the firmware configuration removes these options once DS-Lite is enabled. A lot of customers use modem mode currently and therefore to have DS-Lite IPv6, this basically makes you give it up. In addition, DS-Lite essentially creates a triple NAT for IPv4, given DS-Lite translates IPv4 through CGNAT and CGNAT IS EVIL.
 
   -
     title: Will Virgin Media support IPv6?
