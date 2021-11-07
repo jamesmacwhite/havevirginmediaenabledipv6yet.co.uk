@@ -2,6 +2,10 @@
   "name": "vm-whynoipv6",
   "version": "0.1.0",
   "description": "A little Jekyll project for informing users about the lack of IPv6 on Virgin Media Broadband",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesmacwhite/vm-whynoipv6.git"
+  },
   "main": "index.html",
   "scripts": {
     "test": "script/cibuild"
