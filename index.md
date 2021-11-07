@@ -9,9 +9,11 @@ This website is meant to be an informative resource (with an admittedly somewhat
 
 All this information relates to Virgin Media UK Broadband services. I am a Virgin Media Broadband customer myself. This in no way makes me more qualified, but I thought I'd just throw that out there.
 
+## 
+
 ## Notable IPv6 events
 
-A summarised list of key IPv6 related events with Virgin Media.
+A summarised list of key public IPv6 related events with Virgin Media.
 
 * **March 2010**: [The IPv6 mega thread was born](https://community.virginmedia.com/t5/QuickStart-set-up-and/IPv6-support-on-Virgin-media/td-p/35748) on the Virgin Media Community Forums. The original thread asked a simple question, **"When will Virgin Media deploy IPv6?"** The answer: "When we are ready". Over 10 years later, Virgin Media still aren't ready...
 * **October 2014**: [First appearance and presentation](https://tv.theiet.org/?videoid=5899) at the [UK IPv6 council](https://www.ipv6.org.uk/).
@@ -39,7 +41,7 @@ Why is DS-Lite seen as "bad", it is after all standardised and used by various p
 
 * DS-Lite is believed to be only possible in router mode based on the Virgin Media Hub firmware code, to use it means you have to give up modem mode. This won't sit well with many customers given a lot of customers choose to use this functionality and have done for years
 * DS-Lite removes having your own IPv4 address being routed to you and instead this will be translated through CGNAT. (CGNAT IS EVIL, [ask Europol](https://www.europol.europa.eu/newsroom/news/are-you-sharing-same-ip-address-criminal-law-enforcement-call-for-end-of-carrier-grade-nat-cgn-to-increase-accountability-online))
-* DS Lite means you will no longer be able to run any external services over IPv4 anymore
+* DS-Lite means you will no longer be able to run any external services over IPv4 anymore
 * DS-Lite is horrible for gamers as most games/lobby systems will not use IPv6 (expect a "strict" NAT type)
 * DS-Lite removes IPv4 port forwarding, so if you are currently using that right now, that's not possible with DS-Lite
 
