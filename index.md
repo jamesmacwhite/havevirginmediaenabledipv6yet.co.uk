@@ -9,8 +9,6 @@ This website is meant to be an informative resource (with an admittedly somewhat
 
 All this information relates to Virgin Media UK Broadband services. I am a Virgin Media Broadband customer myself. This in no way makes me more qualified, but I thought I'd just throw that out there.
 
-## 
-
 ## Notable IPv6 events
 
 A summarised list of key public IPv6 related events with Virgin Media.
