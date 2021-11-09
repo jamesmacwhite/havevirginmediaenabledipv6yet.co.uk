@@ -5,45 +5,53 @@ image: /assets/images/card.jpg
 
 ## It's time for Virgin Media to deploy IPv6!
 
-This website is meant to be an informative resource (with an admittedly somewhat sarcastic tone) and raise awareness of the lack of IPv6 on Virgin Media UK Broadband services along with additional information around specific issues with IPv6 tunnels and other areas (it is quite a fun ride). The domain name is a bit of a cheeky dig to see if the marketing team at Virgin Media are watching. Let's find out!
+This website is meant to be an informative resource (with an undeniably somewhat sarcastic tone) and raise awareness of the lack of IPv6 on Virgin Media UK Broadband services along with additional information around specific issues with IPv6 tunnels and other areas (it is quite a fun ride). The domain name is a bit of a cheeky dig to see if the marketing team at Virgin Media are watching. Let's find out!
 
 All this information relates to Virgin Media UK Broadband services. I am a Virgin Media Broadband customer myself. This in no way makes me more qualified, but I thought I'd just throw that out there.
 
 ## Notable IPv6 events
 
-A summarised list of key public IPv6 related events with Virgin Media.
+A summarised list of key public events with Virgin Media mostly related to IPv6.
 
-* **March 2010**: [The IPv6 mega thread was born](https://community.virginmedia.com/t5/QuickStart-set-up-and/IPv6-support-on-Virgin-media/td-p/35748) on the Virgin Media Community Forums. The original thread asked a simple question, **"When will Virgin Media deploy IPv6?"** The answer: "When we are ready". Over 10 years later, Virgin Media still aren't ready...
+* **March 2010**: A thread on the official Virgin Media Community Forum dubbed the [IPv6 mega thread](https://community.virginmedia.com/t5/QuickStart-set-up-and/IPv6-support-on-Virgin-media/td-p/35748) was born. The original thread asked a simple question, **"When will Virgin Media deploy IPv6?"** The answer: "When we are ready". Over 10 years later, Virgin Media still aren't ready... 😞
 * **October 2014**: [First appearance and presentation](https://tv.theiet.org/?videoid=5899) at the [UK IPv6 council](https://www.ipv6.org.uk/).
 * **September 2015**: [Second appearance at the UK IPv6 council](https://tv.theiet.org/?videoid=7412) (Something about DOCSIS bears?!)
-* **November 2016**: [Virgin Media tells ISPreview](https://www.ispreview.co.uk/index.php/2016/11/virgin-media-plans-adopt-ipv6-middle-2017.html) they plan to adopt IPv6 by the middle of 2017.
+* **November 2016**: [Virgin Media tells ISPreview](https://www.ispreview.co.uk/index.php/2016/11/virgin-media-plans-adopt-ipv6-middle-2017.html) they plan to adopt IPv6 by the middle of 2017. (They didn't).
 * **August 2017**: ISPreview reveals there is a super “secret” [IPv6 trial for 100 members of Virgin Media’s own staff](https://www.ispreview.co.uk/index.php/2017/08/virgin-media-invite-100-uk-staff-secret-trial-ipv6-internet-addresses.html). The first hint of some serious activity related to IPv6. Exciting.
-* **February 2018**: Liberty Global (parent company of Virgin Media) releases some interesting information about [Virgin Media and it’s plans for DOCSIS 3.1 and IPv6 adoption](https://www.ispreview.co.uk/index.php/2018/02/update-virgin-medias-uk-ipv6-docsis-3-1-plans.html) (spoiler, it didn't happen). At this point it became known that a DS-Lite based IPv6 deployment was being tested.
-* **June 2018**: [A wider comsumer trial was reported to be underway](https://www.ispreview.co.uk/index.php/2018/06/cable-isp-virgin-media-start-uk-customer-trial-of-ipv6-addresses.html). Looking at IPv6 stats from sources like APNIC confirmed this involved a sizable amount of participants. Not all recorded data may have been residential broadband customers, but a significant amount of IPv6 traffic was being recorded and given there was pretty much none prior.
-* **December 2018**: [Third appearance at the UK IPv6 council](https://www.ipv6.org.uk/2018/11/12/ipv6-council-annual-meeting-dec-2018/), with a presentation and some interesting details around the ongoing IPv6 trial through DS-Lite. Hints for some kind of launch in 2019.
-* **2019**: No IPv6 rollout happens. IPv6 activity goes quiet. (Hopes dashed)
-* **2020**: Nothing happened (Besides a global pandemic)
-* **2021**: YOU ARE HERE
+* **February 2018**: Liberty Global (parent company of Virgin Media) does the unthinkable and releases informative public information about [Virgin Media and it’s plans for DOCSIS 3.1 and IPv6 adoption](https://www.ispreview.co.uk/index.php/2018/02/update-virgin-medias-uk-ipv6-docsis-3-1-plans.html) plans to the public.
+* **June 2018**: [A wider consumer trial was reported to be underway](https://www.ispreview.co.uk/index.php/2018/06/cable-isp-virgin-media-start-uk-customer-trial-of-ipv6-addresses.html). IPv6 stats from sources like APNIC confirmed this involved a sizable amount of participants. Everyone gets excited, is this the year?! (Spoiler, no).
+* **December 2018**: [Third appearance at the UK IPv6 council](https://www.ipv6.org.uk/2018/11/12/ipv6-council-annual-meeting-dec-2018/), with a presentation and further interesting details around the ongoing IPv6 trial using DS-Lite. Hints for some kind of rollout in 2019.
+* **October 2019:** [ISPreview asks Virgin Media for an update on IPv6 progress](https://www.ispreview.co.uk/index.php/2019/10/update-on-ipv6-plans-for-virgin-media-talktalk-and-vodafone.html). Virgin Media provides one of it's trademark canned statements. No IPv6 rollout happens. IPv6 activity goes quiet. (Everyone's IPv6 dreams crushed).
+* **May 2020/2020**: Virgin Media and O2 announce they are going to merge, also there was a global pandemic.
+* **June 2021**: Merger with O2 is formally completed. So about those IPv6 plans VMO2?
+* **November 2021**: [ISPReview asks Virgin Media for an update on IPv6 progress again](https://www.ispreview.co.uk/index.php/2021/11/update-on-ipv6-plans-for-virgin-media-talktalk-plusnet-and-vodafone.html), the spokesperson did however pad it out with a few more words this time.
+* **2022**: WILL THIS BE THE YEAR?!
 
-## The IPv6 story
+## The IPv6 saga
 
 Searching for "Virgin Media IPv6" will probably bring up many of the resources linked above and articles I've likely written or commented on, given I've been quite vocal about the subject for a while now.
 
 ### DS-Lite
 
-While Virgin Media hasn't deployed IPv6 officially in the UK, it has in the past trialled IPv6 through [DS-Lite](https://en.wikipedia.org/wiki/IPv6_transition_mechanism#Dual-Stack_Lite_(DS-Lite)). DS-Lite is something Liberty Global (parent company of Virgin Media) have regularly deployed in other countries and seems to be their preferred IPv6 deployment technology. In contrast, [Virgin Media Ireland](https://virginmedia.ie) (Formerly UPC) does in fact have IPv6 through DS-Lite live right now. So Virgin Media have technically deployed IPv6, just not for the UK customer base. However, on a personal opinion level DS-Lite is horrible for consumers, so even though the objective is to get Virgin Media to deploy IPv6, preferably, it should be a dual stack approach, not DS-Lite. There are rumours to suggest that DS-Lite might have been abandoned a while ago for the UK, but no one knows for sure, given Virgin Media doesn't like to talk about IPv6. So it is all speculation at this point.
+While Virgin Media hasn't ever deployed IPv6 officially in the UK, it has in the past trialled IPv6 through [DS-Lite](https://en.wikipedia.org/wiki/IPv6_transition_mechanism#Dual-Stack_Lite_(DS-Lite)). DS-Lite is something Liberty Global (parent company of Virgin Media) have regularly deployed in other countries and this seems to be their preferred IPv6 deployment technology. In contrast, [Virgin Media Ireland](https://virginmedia.ie) (Formerly UPC) does in fact have IPv6 through DS-Lite live currently. So Virgin Media have technically deployed IPv6, just not for the UK customer base. DS-Lite however has caused some divide between enthusiasts for a few reasons.
 
 #### Issues with DS-Lite
 
-Why is DS-Lite seen as "bad", it is after all standardised and used by various providers right? Here are some key issues with DS-Lite from a consumer basis which might catch a lot of people out and possibly a reason why it was rumoured to be abandoned.
+1. The DS-Lite implementation is only compatible with CPEs in router mode. This has been confirmed by Virgin Media Ireland customers and can be seen in the JavaScript source files of the Virgin Media router firmware. To use this IPv6 implementation means you have to give up modem mode. This doesn't sit well with many customers given a lot of customers rely on this critical function in order to use their own router without double NAT. While IPv6 prefix delegation could allow for having your own router behind the Virgin Media CPE without modem mode, it is certainly not ideal. The reasoning behind the decision was based on the principle that support for DS-Lite itself is not common in many off the shelf' routers.
 
-* DS-Lite is believed to be only possible in router mode based on the Virgin Media Hub firmware code, to use it means you have to give up modem mode. This won't sit well with many customers given a lot of customers choose to use this functionality and have done for years
-* DS-Lite removes having your own IPv4 address being routed to you and instead this will be translated through CGNAT. (CGNAT IS EVIL, [ask Europol](https://www.europol.europa.eu/newsroom/news/are-you-sharing-same-ip-address-criminal-law-enforcement-call-for-end-of-carrier-grade-nat-cgn-to-increase-accountability-online))
-* DS-Lite means you will no longer be able to run any external services over IPv4 anymore
-* DS-Lite is horrible for gamers as most games/lobby systems will not use IPv6 (expect a "strict" NAT type)
-* DS-Lite removes IPv4 port forwarding, so if you are currently using that right now, that's not possible with DS-Lite
+2. DS-Lite removes having your own IPv4 address being routed to you and instead this will be translated through CGNAT. (CGNAT IS EVIL, [ask Europol](https://www.europol.europa.eu/newsroom/news/are-you-sharing-same-ip-address-criminal-law-enforcement-call-for-end-of-carrier-grade-nat-cgn-to-increase-accountability-online)).
+3. DS-Lite means you will no longer be able to run any external services over IPv4 anymore, devices that have questionable IPv6 support, may fall foul of this. Particularly suspect IoT devices, which probably should be an isolated VLAN with no way to communicate to the outside world anyway.
+4. DS-Lite will likely be horrible for gamers as most games/lobby systems will not use IPv6 (expect a "strict" NAT type). I'm sure at some point Virgin Media pitched it's broadband with gamer focussed marketing. <small>Just don't talk about the latency!</small>
+5. DS-Lite removes IPv4 port forwarding, so if you are currently using that right now, that's not possible with DS-Lite.
 
-DS-Lite provides you a native IPv6 prefix (GOOD!) with IPv4 translated through CGNAT (BAD!). This is why the preferred approach is dual stack, yes it is more complex to maintain two protocols, but since Virgin Media has boasted in the past that its IPv4 space was plentiful, they've most likely got the address space to do it. Two of their biggest competitors in the fixed line broadband space (BT and Sky) both use a dual stack approach.
+Overall DS-Lite provides you a native IPv6 prefix (GOOD!) with IPv4 translated through CGNAT (BAD!). This is why the preferred approach is dual stack, yes it is more complex to maintain two protocols, but since Virgin Media has boasted in the past that its IPv4 space was plentiful, they've most likely got the address space to do it. Two of their biggest competitors in the fixed line broadband space (BT and Sky) both use a dual stack approach and most customers will likely benefit from this approach.
+
+In a more recent canned statement released by Virgin Media. It suggests that multiple IPv6 options have been considered. There may be hope!
+
+<blockquote>
+<p>We are continuing to plan our IPV6 deployment having tested several solutions and intend to introduce IPV6 for our customers in future.</p>
+<cite>A VM02 Spokesperson, quote from <a href="https://www.ispreview.co.uk/index.php/2021/11/update-on-ipv6-plans-for-virgin-media-talktalk-plusnet-and-vodafone.html">ISPreview (November 2021)</a></cite>
+</blockquote>
 
 ### IPv6 tunnels
 
@@ -55,7 +63,7 @@ It has long been known and more recently documented that running a 6in4 tunnel f
 
 **If you don't want to read the full article above, these are the main findings**
 
-1. When a 6in4 tunnel is pointed at any Virgin Media IP, the speed is very poor. (This also includes Virgin Media Business lines as well)
+1. When a 6in4 tunnel is pointed at any Virgin Media IP, the speed can be very poor. (This also includes Virgin Media Business lines as well)
 2. If you encapsulate 6in4 over something like UDP, suddenly the problem goes away
 3. If you have a 6in4 tunnel pointed to a non Virgin Media IP, you will not experience any problems
 
@@ -74,7 +82,7 @@ Any protocol such as L2TP, UDP, OpenVPN, Wireguard you name it, if you send 6in4
 * General CPU bottlenecks (6in4 does have some CPU requirements)
 * Bad configuration e.g. MTU.
 
-The alternative theory which [Virgin Media itself seems to think might be the case](https://www.ispreview.co.uk/index.php/2020/08/virgin-media-uk-move-to-fix-20mbps-speed-cap-on-ipv6-tunnels.html) is it's their CPE causing the performance problem for customers. This however is also debated as the issue has been proven to occur on the first version of the SuperHub and up.
+The alternative theory which [Virgin Media itself seems to think might be the case](https://www.ispreview.co.uk/index.php/2020/08/virgin-media-uk-move-to-fix-20mbps-speed-cap-on-ipv6-tunnels.html) is it's their CPE causing the performance problem for customers. It has been reported the Hub4 does not have the same performance problems, hinting that it's possibly tied to CPU.
 
 The many theories as to what the specific issue is can be talked about at length. Ultimately, it doesn't really matter as it is worth highlighting that 6in4 is also a transitional technology and shouldn't be used forever either, so holding out on 6in4 is basically just like not deploying IPv6 anyway. The real "fix" here is to demonstrate to Virgin Media that IPv6 is needed now. Thus resolving the lack of native IPv6 problem and negating the need to use any form of transitional IPv6 technology and indirectly resolving the 6in4 issue by making it redundant.
 
