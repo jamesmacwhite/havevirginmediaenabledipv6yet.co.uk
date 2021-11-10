@@ -24,6 +24,7 @@ A summarised list of key public events with Virgin Media mostly related to IPv6.
 * **October 2019:** [ISPreview asks Virgin Media for an update on IPv6 progress](https://www.ispreview.co.uk/index.php/2019/10/update-on-ipv6-plans-for-virgin-media-talktalk-and-vodafone.html). Virgin Media provides one of it's trademark canned statements. No IPv6 rollout happens. IPv6 activity goes quiet. (Everyone's IPv6 dreams crushed).
 * **May 2020/2020**: Virgin Media and O2 announce they are going to merge, also there was a global pandemic.
 * **June 2021**: Merger with O2 is formally completed. So about those IPv6 plans VMO2?
+* **May 2021**: Turns out Virgin Media has [a IPv6 implementation hiding away](https://jamesmacwhite.medium.com/have-virgin-media-enabled-ipv6-sort-of-9443e5e855d?source=friends_link&sk=863cd14dc40d718be6d4f8bbf46e2220) if you know where to look. Kind of.
 * **November 2021**: [ISPReview asks Virgin Media for an update on IPv6 progress again](https://www.ispreview.co.uk/index.php/2021/11/update-on-ipv6-plans-for-virgin-media-talktalk-plusnet-and-vodafone.html), the spokesperson did however pad it out with a few more words this time.
 * **2022**: WILL THIS BE THE YEAR?!
 
