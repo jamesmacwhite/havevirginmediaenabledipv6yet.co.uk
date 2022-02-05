@@ -22,16 +22,6 @@ github:
 twitter:
   username: jamesmacwhite
 
-webrick:
-  headers:
-    Content-Security-Policy-Report-Only: "default-src 'self' ;"
-    X-Frame-Options: "SAMEORIGIN"
-    Strict-Transport-Security: "max-age=31536000; includeSubdomains"
-    X-XSS-Protection: "1; mode=block"
-    X-Content-Type-Options: "nosniff"
-    Expect-CT: "max-age=86400, enforce, report-uri https://jmwhite.report-uri.io/r/default/ct/enforce"
-    Referrer-Policy: "strict-origin-when-cross-origin"
-
 lang: en-GB
 title: Have Virgin Media deployed IPv6 yet?
 description: Raising awareness about the lack of IPv6 on Virgin Media Broadband

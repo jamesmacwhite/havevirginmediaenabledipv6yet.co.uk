@@ -9,6 +9,11 @@
     {% if site.google_analytics and jekyll.environment == 'production' %}
     <link rel="dns=prefetch" href="https://www.google-analytics.com">
     {% endif %}
+    
+    {% if jekyll.environment == 'production' %}
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; style-src 'self' 'unsafe-inline' ; img-src 'self' ; font-src 'self' data: ; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.google-analytics.com https://unpkg.com ;">
+      <meta name="referrer" content="strict-origin-when-cross-origin">
+    {% endif %}
 
     <title>{{ site.title }}</title>
     {% seo title=false %}
