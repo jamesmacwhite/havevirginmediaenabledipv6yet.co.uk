@@ -73,19 +73,19 @@ It has long been known and more recently documented that running a 6in4 tunnel f
 1. Something on the Virgin Media side is the problem
 2. Encapsulating 6in4 within another protocol seems to avoid or circumvent the performance issues
 
-Any protocol such as L2TP, UDP, OpenVPN, Wireguard you name it, if you send 6in4 inside them, you'll not see the same performance problems. So about that not throttling traffic thing...
+Any protocol such as L2TP, UDP, OpenVPN, Wireguard you name it, if you send 6in4 inside them, you'll not see the same performance problems.
 
-**The main theories of why this is the case are <ins>widely debated</ins>**:
+**The main theories of why this happens are <ins>widely debated</ins>**:
 
-* Throttling may well be happening somewhere, but Virgin Media state there isn't any
-* Some form of QoS or prioritisation of protocols happens in the network, treating 6in4 like a lower class citizen compared to other protocols
-* The CPE (Customer Premise Equipment) i.e. SuperHub/Hub has been hinted as a potential factor
-* General CPU bottlenecks (6in4 does have some CPU requirements)
-* Bad configuration e.g. MTU.
+1. Throttling may well be happening somewhere, but Virgin Media itself states they aren't actively doing this.
+2. Some form of QoS or prioritisation of protocols happens in the network, treating 6in4 like a lower class citizen compared to other protocols.
+3. The CPE (Customer Premise Equipment) i.e. SuperHub/Hub has been hinted as a potential factor
+4. General CPU hardware bottlenecks (6in4 does have some CPU requirements)
+5. Bad configuration e.g. MTU.
 
-The alternative theory which [Virgin Media itself seems to think might be the case](https://www.ispreview.co.uk/index.php/2020/08/virgin-media-uk-move-to-fix-20mbps-speed-cap-on-ipv6-tunnels.html) is it's their CPE causing the performance problem for customers. It has been reported the Hub4 does not have the same performance problems, hinting that it's possibly tied to CPU.
+The theory which [Virgin Media itself seems to think might be the case](https://www.ispreview.co.uk/index.php/2020/08/virgin-media-uk-move-to-fix-20mbps-speed-cap-on-ipv6-tunnels.html) is it's their CPE causing the performance problem for customers. It has been reported the Hub4, Hub5 and Hitron Chita Router for Virgin Media Business does not have the same performance problems, hinting that it is related to the hardware of the older SuperHub, SuperHub 2/2ac and Hub3 models.
 
-The many theories as to what the specific issue is can be talked about at length. Ultimately, it doesn't really matter as it is worth highlighting that 6in4 is also a transitional technology and shouldn't be used forever either, so holding out on 6in4 is basically just like not deploying IPv6 anyway. The real "fix" here is to demonstrate to Virgin Media that IPv6 is needed now. Thus resolving the lack of native IPv6 problem and negating the need to use any form of transitional IPv6 technology and indirectly resolving the 6in4 issue by making it redundant.
+Ultimately, it doesn't really matter as it is worth highlighting that 6in4 is also a transitional technology and shouldn't be used forever either, so holding out on 6in4 is basically just like not deploying IPv6 anyway. The real "fix" here is to demonstrate to Virgin Media that IPv6 is needed now. Thus resolving the lack of native IPv6 problem and negating the need to use any form of transitional IPv6 technology and indirectly resolving the 6in4 issue by making it a redundant issue.
 
 ### Alternative IPv6 options
 
