@@ -27,7 +27,7 @@ A summarised list of key public events with Virgin Media mostly related to IPv6.
 * **May 2021**: Turns out Virgin Media has [a IPv6 implementation hiding away](https://jamesmacwhite.medium.com/have-virgin-media-enabled-ipv6-sort-of-9443e5e855d?source=friends_link&sk=863cd14dc40d718be6d4f8bbf46e2220) if you know where to look. Kind of.
 * **November 2021**: [ISPReview asks Virgin Media for an update on IPv6 progress again](https://www.ispreview.co.uk/index.php/2021/11/update-on-ipv6-plans-for-virgin-media-talktalk-plusnet-and-vodafone.html), the spokesperson did however pad it out with a few more words this time.
 * **2022**: 12 years on, and no sign of any IPv6. Sad times.
-* **2023**: WILL THIS BE THE YEAR?!
+* **October 2023**: Some [Virgin Media customers report](https://community.virginmedia.com/t5/QuickStart-set-up-and/IPv6-support-on-Virgin-media/m-p/5430869/highlight/true#M238987) their reverse DNS hostname has changed, which is a different format and adds "v4wan" into the hostname. Unconfirmed that this relates to any imminent IPv6 deployment, but interesting that now Virgin Media are specifying a hostname value with a specific protocol version, suggesting a v6wan version may exist or will do soon.
 
 ## The IPv6 saga
 
