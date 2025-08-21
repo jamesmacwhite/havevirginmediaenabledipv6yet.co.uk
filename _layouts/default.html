@@ -55,20 +55,11 @@
       }
 
       if (readCookie('cookie-notice-dismissed') == 'true') {
-        document.getElementById('cookie-notice').style.display = 'none';
         {%if site.google_analytics and jekyll.environment == 'production' %}
           {% include head-google-analytics.html %}
         {% endif %}  
       }
-      else {
-        document.getElementById('cookie-notice').style.display = 'block';
-      }
-      
-      document.getElementById('cookie-notice-accept').addEventListener("click", function() {
-          createCookie('cookie-notice-dismissed','true', 31);
-          document.getElementById('cookie-notice').style.display = 'none';
-          location.reload();
-      });
+
     </script>
 
     {% if readCookie('cookie-notice-dismissed')=='true' and site.google_analytics and jekyll.environment == 'production' %}
