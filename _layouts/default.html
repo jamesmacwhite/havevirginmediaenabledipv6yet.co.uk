@@ -54,11 +54,11 @@
           createCookie(name,"",-1);
       }
 
-      if (readCookie('cookie-notice-dismissed') == 'true') {
-        {%if site.google_analytics and jekyll.environment == 'production' %}
+      {% if site.google_analytics and jekyll.environment == 'production' %}
+        if (readCookie('cookie-notice-dismissed') == 'true') {
           {% include head-google-analytics.html %}
-        {% endif %}  
-      }
+        }
+      {% endif %}
 
     </script>
 
